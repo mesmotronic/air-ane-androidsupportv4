@@ -5,17 +5,21 @@ package com.mesmotronic.ane.androidsupportv4
 
 	public class AndroidSupportV4
 	{
+		/* Public */
+		
+		public static function get isSupported():Boolean
+		{
+			return !!context;
+		}
+		
+		/* Private */
+		
 		// Static initializer
 		{
 			init();
 		}
 		
 		private static var context:ExtensionContext;
-		
-		public static function get isSupported():Boolean
-		{
-			return !!context;
-		}
 		
 		private static function init():void
 		{
