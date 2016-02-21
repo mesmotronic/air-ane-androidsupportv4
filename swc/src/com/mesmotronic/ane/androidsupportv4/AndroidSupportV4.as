@@ -21,9 +21,13 @@ package com.mesmotronic.ane.androidsupportv4
 		{
 			var version:String = Capabilities.version.substr(0,3);
 			
-			if (version == 'AND')
+			switch (version)
 			{
-				context = ExtensionContext.createExtensionContext('com.mesmotronic.ane.androidsupportv4', '');
+				case 'AND':
+				{
+					context = ExtensionContext.createExtensionContext('com.mesmotronic.ane.androidsupportv4', '');
+					break;
+				}
 			}
 		}
 	}
