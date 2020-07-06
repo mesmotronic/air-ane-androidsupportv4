@@ -21,6 +21,14 @@
             </applicationDeployment> 
         </platform>
         
+        <platform name="Android-x64"> 
+            <applicationDeployment> 
+                <nativeLibrary>air-ane-androidsupportv4-jar.jar</nativeLibrary> 
+                <initializer>com.mesmotronic.ane.androidsupportv4.AndroidSupportV4Extension</initializer> 
+                <finalizer>com.mesmotronic.ane.androidsupportv4.AndroidSupportV4Extension</finalizer> 
+            </applicationDeployment> 
+        </platform>
+        
         <platform name="Android-x86"> 
             <applicationDeployment> 
                 <nativeLibrary>air-ane-androidsupportv4-jar.jar</nativeLibrary> 
